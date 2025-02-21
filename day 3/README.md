@@ -1,4 +1,4 @@
-Here's a structured summary of what you've learned and the difficulties you faced while working on these tasks:  
+
 
 ---
 
