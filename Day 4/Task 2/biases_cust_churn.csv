@@ -1,0 +1,21 @@
+CustomerID,Gender,SeniorCitizen,Contract,PaymentMethod,InternetService,State,Churn
+1,Male,1,Two year,Credit card,Fiber optic,Texas,Yes
+2,Female,0,Two year,Mailed check,Fiber optic,Florida,No
+3,Male,1,One year,Mailed check,Fiber optic,California,No
+4,Male,1,Two year,Mailed check,Fiber optic,Florida,Yes
+5,Male,1,One year,Electronic check,Fiber optic,California,Yes
+6,Female,1,One year,Mailed check,Fiber optic,Texas,Yes
+7,Male,1,Two year,Electronic check,Fiber optic,New York,No
+8,Male,1,One year,Mailed check,DSL,California,No
+9,Male,1,Two year,Credit card,No,Florida,No
+10,Female,1,Two year,Credit card,Fiber optic,Texas,No
+11,Male,0,Month-to-month,Bank transfer,Fiber optic,California,No
+12,Male,0,Two year,Credit card,Fiber optic,Florida,No
+13,Male,1,Month-to-month,Bank transfer,Fiber optic,Florida,No
+14,Male,1,Two year,Credit card,Fiber optic,Florida,No
+15,Female,1,Two year,Electronic check,Fiber optic,California,Yes
+16,Male,0,Month-to-month,Credit card,No,California,No
+17,Female,1,Month-to-month,Bank transfer,No,California,No
+18,Female,0,Two year,Bank transfer,Fiber optic,New York,No
+19,Female,0,One year,Mailed check,No,California,No
+20,Male,0,Month-to-month,Electronic check,DSL,California,Yes
