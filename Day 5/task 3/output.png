@@ -1,0 +1,32 @@
+Bowler        Batter    Ball Type Shot Type Speed (kph) Runs Scored
+0  Jasprit Bumrah   Virat Kohli  good length    single        None        None
+1  Mitchell Starc  Rohit Sharma       yorker      four         145        None
+2     Pat Cummins      KL Rahul   short ball       six        None        None
+3     Rashid Khan      MS Dhoni    full toss    double        None        None
+
+TF-IDF from scratch:
+Document 1: {'Jasprit': np.float64(0.15969089432284625), 'Bumrah': np.float64(0.15969089432284625), 'to': np.float64(0.08333333333333333), 'Virat': np.float64(0.15969089432284625), 'Kohli,': np.float64(0.15969089432284625), 'good': np.float64(0.15969089432284625), 'length': np.float64(0.15969089432284625), 'ball,': np.float64(0.12590213531383254), 'played': np.float64(0.15969089432284625), 'for': np.float64(0.08333333333333333), 'a': np.float64(0.10192862927618414), 'single.': np.float64(0.15969089432284625)}
+Document 2: {'Mitchell': np.float64(0.14740697937493502), 'Starc': np.float64(0.14740697937493502), 'to': np.float64(0.07692307692307693), 'Rohit': np.float64(0.14740697937493502), 'Sharma,': np.float64(0.14740697937493502), 'yorker': np.float64(0.14740697937493502), 'at': np.float64(0.14740697937493502), '145': np.float64(0.14740697937493502), 'kph,': np.float64(0.14740697937493502), 'driven': np.float64(0.14740697937493502), 'for': np.float64(0.07692307692307693), 'four': np.float64(0.14740697937493502), 'runs!': np.float64(0.14740697937493502)}
+Document 3: {'Pat': np.float64(0.17420824835219592), 'Cummins': np.float64(0.17420824835219592), 'to': np.float64(0.09090909090909091), 'KL': np.float64(0.17420824835219592), 'Rahul,': np.float64(0.17420824835219592), 'short': np.float64(0.17420824835219592), 'ball,': np.float64(0.13734778397872643), 'pulled': np.float64(0.17420824835219592), 'for': np.float64(0.09090909090909091), 'a': np.float64(0.1111948683012918), 'six!': np.float64(0.17420824835219592)}
+Document 4: {'Rashid': np.float64(0.17420824835219592), 'Khan': np.float64(0.17420824835219592), 'to': np.float64(0.09090909090909091), 'MS': np.float64(0.17420824835219592), 'Dhoni,': np.float64(0.17420824835219592), 'full': np.float64(0.17420824835219592), 'toss,': np.float64(0.17420824835219592), 'flicked': np.float64(0.17420824835219592), 'for': np.float64(0.09090909090909091), 'a': np.float64(0.1111948683012918), 'double.': np.float64(0.17420824835219592)}
+
+TF-IDF using Scikit-learn:
+        145        at      ball    bumrah   cummins   dhoni  double    driven  \
+0  0.000000  0.000000  0.260410  0.330297  0.000000  0.0000  0.0000  0.000000   
+1  0.294313  0.294313  0.000000  0.000000  0.000000  0.0000  0.0000  0.294313   
+2  0.000000  0.000000  0.275894  0.000000  0.349936  0.0000  0.0000  0.000000   
+3  0.000000  0.000000  0.000000  0.000000  0.000000  0.3421  0.3421  0.000000   
+
+   flicked       for  ...      runs    sharma     short    single       six  \
+0   0.0000  0.172363  ...  0.000000  0.000000  0.000000  0.330297  0.000000   
+1   0.0000  0.153585  ...  0.294313  0.294313  0.000000  0.000000  0.000000   
+2   0.0000  0.182611  ...  0.000000  0.000000  0.349936  0.000000  0.349936   
+3   0.3421  0.178522  ...  0.000000  0.000000  0.000000  0.000000  0.000000   
+
+      starc        to    toss     virat    yorker  
+0  0.000000  0.172363  0.0000  0.330297  0.000000  
+1  0.294313  0.153585  0.0000  0.000000  0.294313  
+2  0.000000  0.182611  0.0000  0.000000  0.000000  
+3  0.000000  0.178522  0.3421  0.000000  0.000000  
+
+[4 rows x 37 columns]

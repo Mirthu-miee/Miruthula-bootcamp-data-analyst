@@ -1,0 +1,41 @@
+Bowler        Batter    Ball Type Shot Type Speed (kph) Runs Scored
+0  Jasprit Bumrah   Virat Kohli  good length    single        None        None
+1  Mitchell Starc  Rohit Sharma       yorker      four         145        None
+2     Pat Cummins      KL Rahul   short ball       six        None        None
+3     Rashid Khan      MS Dhoni    full toss    double        None        None
+
+Count Vectorizer Output:
+    145  at  ball  bumrah  cummins  dhoni  double  driven  flicked  for  ...  \
+0    0   0     1       1        0      0       0       0        0    1  ...   
+1    1   1     0       0        0      0       0       1        0    1  ...   
+2    0   0     1       0        1      0       0       0        0    1  ...   
+3    0   0     0       0        0      1       1       0        1    1  ...   
+
+   runs  sharma  short  single  six  starc  to  toss  virat  yorker  
+0     0       0      0       1    0      0   1     0      1       0  
+1     1       1      0       0    0      1   1     0      0       1  
+2     0       0      1       0    1      0   1     0      0       0  
+3     0       0      0       0    0      0   1     1      0       0  
+
+[4 rows x 37 columns]
+
+TF-IDF Vectorizer Output:
+         145        at      ball    bumrah   cummins   dhoni  double    driven  \
+0  0.000000  0.000000  0.260410  0.330297  0.000000  0.0000  0.0000  0.000000   
+1  0.294313  0.294313  0.000000  0.000000  0.000000  0.0000  0.0000  0.294313   
+2  0.000000  0.000000  0.275894  0.000000  0.349936  0.0000  0.0000  0.000000   
+3  0.000000  0.000000  0.000000  0.000000  0.000000  0.3421  0.3421  0.000000   
+
+   flicked       for  ...      runs    sharma     short    single       six  \
+0   0.0000  0.172363  ...  0.000000  0.000000  0.000000  0.330297  0.000000   
+1   0.0000  0.153585  ...  0.294313  0.294313  0.000000  0.000000  0.000000   
+2   0.0000  0.182611  ...  0.000000  0.000000  0.349936  0.000000  0.349936   
+3   0.3421  0.178522  ...  0.000000  0.000000  0.000000  0.000000  0.000000   
+
+      starc        to    toss     virat    yorker  
+0  0.000000  0.172363  0.0000  0.330297  0.000000  
+1  0.294313  0.153585  0.0000  0.000000  0.294313  
+2  0.000000  0.182611  0.0000  0.000000  0.000000  
+3  0.000000  0.178522  0.3421  0.000000  0.000000  
+
+[4 rows x 37 columns]
